@@ -20,7 +20,10 @@ module.exports = {
   },
   plugins: [
     'react',
+    'import',
   ],
   rules: {
-  },
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/named": 2,
+  }
 };

@@ -1,33 +1,34 @@
+/* eslint-disable no-unused-expressions */
 import React from 'react';
+import { connect } from 'react-redux';
 import Page from '../../templates/Page';
 import Header from '../../templates/Header';
-import { connect } from 'react-redux';
 
+// eslint-disable-next-line react/prop-types
 function AppPage({ theme }) {
-
   const html = document.querySelector('html');
 
   const darkTheme = {
     contentBackground: '#333',
     headerBackground: '#111',
     fontColor: '#fff',
-  }
+  };
 
   const lightTheme = {
     contentBackground: '#fff',
     headerBackground: '#f1f1f1',
     fontColor: '#333',
-  }
+  };
 
-  const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase();
+  const transformKey = (key) => `--${key.replace(/([A-Z])/, '-$1').toLowerCase()}`;
 
   const changeTheme = (colors) => {
-    Object.keys(colors).map(key => html.style.setProperty(transformKey(key), colors[key]));
-  }
+    Object.keys(colors).map((key) => html.style.setProperty(transformKey(key), colors[key]));
+  };
 
   theme ? changeTheme(darkTheme) : changeTheme(lightTheme);
 
-  return(
+  return (
     <Page header={Header}>
       <div>
         <span>Here you can add your components.</span>
@@ -36,7 +37,7 @@ function AppPage({ theme }) {
   );
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   theme: state.theme,
 });
 

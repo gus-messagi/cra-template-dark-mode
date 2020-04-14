@@ -1,22 +1,20 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Page.scss';
 
 function Page({ children, header }) {
-  
   const Header = header;
 
-  return(
+  return (
     <div className="page">
-      
       {header !== undefined && (
-        <Header/>
+        <Header />
       )}
-      
       <div className="page__content">
         {children}
       </div>
     </div>
-  )
+  );
 }
 
 export default Page;

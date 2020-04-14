@@ -3,7 +3,7 @@ import Switch from '../../atoms/AppSwitch';
 import './Header.scss';
 
 function Header() {
-  return(
+  return (
     <header>
       <div className="header-div">
         <div>
@@ -11,7 +11,7 @@ function Header() {
         </div>
         <div>
           <Switch />
-        </div>  
+        </div>
       </div>
     </header>
   );
