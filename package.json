@@ -13,8 +13,5 @@
     "type": "git",
     "url": "https://github.com/gus-messagi/cra-dark-theme"
   },
-  "license": "MIT",
-  "eslintConfig": {
-    "extends": "react-app"
-  }
+  "license": "MIT"
 }
