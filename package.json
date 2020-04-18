@@ -1,6 +1,7 @@
 {
   "name": "cra-template-dark-mode",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "main": "template.json",
   "author": "Gustavo de Ramos Messagi",
   "keywords": [
     "react",
@@ -11,7 +12,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gus-messagi/cra-dark-theme"
+    "url": "https://github.com/gus-messagi/cra-template-dark-theme"
   },
+  "engines": {
+    "node": ">=8.10"
+  },
+  "files": [
+    "template",
+    "template.json",
+    ".eslintrc.js",
+    ".eslintrc.json"
+  ],
   "license": "MIT"
 }

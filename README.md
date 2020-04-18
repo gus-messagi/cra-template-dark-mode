@@ -25,7 +25,7 @@ Follow the paths below to work with this template
 ### Installation
 
 ```sh
-npx create-react-app --template dark-mode
+npx create-react-app <YOUR_APPLICATION_NAME> --template dark-mode
 ```
 
 ### Folders structure
